@@ -2,7 +2,7 @@
 - Follow the steps to execute the code
 ```
 git clone --branch Todo-List https://github.com/hemang11/React-Native-Learning
-cd Todo-List
+cd React-Native-Learning
 yarn
 yarn start
 ```
