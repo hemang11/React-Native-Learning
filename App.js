@@ -8,9 +8,9 @@ import AddTodo from './component/AddTodo'
 export default function App() {
 
   const [todos, setTodos] = useState([
-    { text: 'buy coffee', key: 1 },
-    { text: 'create an app', key: 2 },
-    { text: 'play on the switch', key: 3 }
+    { text: 'buy coffee', key: '1' },
+    { text: 'create an app', key: '2' },
+    { text: 'play on the switch', key: '3' }
   ]);
 
   const deleteTodo = (key) => {
@@ -22,7 +22,7 @@ export default function App() {
   const addTodo = (val) => {
 
     if(val){
-      const todo = {text:val,key:Math.random()}
+      const todo = {text:val,key:Math.random().toString()}
       setTodos(prevTodos => {
         return [
           todo,...prevTodos
